@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400|Roboto|Montserrat:700,800');
+
+body {
+    text-align : center;
+    margin: 0;
+    padding: 0;
+
+}
+ * { 
+     color:#fff; 
+     text-decoration: none;
+}
+
+section.cd-section::before
+{
+    display: none !important;
+}
+
+section.cd-section-hero {
+    background-image: url("images/297.jpg");
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+section.cd-section {
+    position: relative;
+}
+
+section.cd-section-full {
+    height: 100vh;
+    display:table;
+    table-layout: fixed;
+    width: 100%;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.cd-section .overlay {
+    opacity: 0.6;
+    background-color: rgb(130,0,10);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.cd-section .cd-table-cell {
+    margin: 0 auto;
+    width: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    padding-bottom: 0;
+    padding-top: 0;
+    float: none;
+    position: relative;
+   
+}
+
+.cd-section .container{
+    padding: 0;
+    position: relative;
+    display: table;
+    clear: both;
+    z-index: 2;
+    margin: 0 auto;
+    color: #fff;
+}
+
+.cd-section .cd-table-cell .container .title {
+    padding: 80px 10px;
+    padding-bottom: 0;
+    
+}
+
+.cd-section .container .title-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 3.25em; 
+    line-height:1.25;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-bottom: 10%;
+}
+
+.cd-section .container .undertext {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.17em; 
+    font-weight: 300;
+    margin-bottom: 10%;
+}
+
+@keyframes caret {
+  50% {
+    border-color: transparent;
+  }
+}
+
+span.wrap {                         /* The cursor */
+  border-right: .05em solid;
+  animation: caret 0.5s steps(4) infinite;
+}
+
+.my-countdown {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.my-countdown .countdown-row{
+    margin-left: 0;
+    margin-right: 0;
+    display: block;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    
+}
+
+.my-countdown .countdown-section {
+    display: inline-block;
+    position: relative;
+    padding: 5px 10px 13px 10px;
+/*    min-width: 100px;*/
+}
+
+.my-countdown .countdown-amount {
+    display: block;
+    font-family: 'Montserrat', sans-serif;  
+    font-size: 3.5em;
+    line-height: 1.3;
+    padding: 0 20px;
+    font-weight: 700;
+}
+
+.my-countdown .countdown-period {
+     display: block; 
+        
+     text-transform: uppercase;
+     margin-top: 0px;
+     border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+.my-countdown .separator {
+    position: absolute;
+    display: block;
+    top: 10%;
+    right: -0.5em;
+    height: 83%;
+    line-height: 83%;
+    overflow: hidden;
+    width: 1em;
+    font-weight: 900;
+    font-size: 4.05em;
+}
+
+form {
+    display: table;
+    margin: 0 auto;
+    width: 10%;
+    transition: width 0.5s;
+}
+
+.cd-subscribe {
+    border-color: rgba(255, 255, 255, 0.5);
+    border-radius: 3px;
+    border: 1px solid #e8e8e8;
+    height: 4rem;
+    padding: 0;
+    position: relative;
+    background: none;
+} 
+
+.cd-form .input-group {
+    display: table;
+    border-collapse: separate;
+}
+
+.cd-subscribe input[type="email"] {
+    padding-right: 0px;
+    padding-left: 14px;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.cd-subscribe .form-control {
+    position: relative;
+    display: table-cell;
+    color: #fff;
+    border: 0;
+    background: none;
+    top: 1rem;
+    z-index: 2;
+    float: left;
+
+    width: 100%;
+    margin-bottom: 0;
+    cursor: text;
+    border-radius: 3px;
+    box-shadow: none;
+    font-size: 0.8em;
+    line-height: 1.43;
+    padding: 0.5em 1.07em 0.5em;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    font-family: 'Roboto', sans-serif;
+}
+
+.input-group-btn {
+    font-size: 0;
+    line-height:  0;
+    position: static;
+    width: 1%;
+    white-space: nowrap;
+    vertical-align: middle;
+    display: table-cell;
+    border-collapse: separate;
+    font-family: 'Roboto', sans-serif;
+/*    z-index: 4;*/
+}
+
+.input-group-btn::after {
+    border-radius: 3px;
+    border: 1px solid transparent;
+    position: absolute;
+    bottom: -1px;
+    content: "";
+    display: block;
+    right: -1px;
+    top: -1px;
+}
+
+.btn {
+    font-weight: 500;
+    letter-spacing: 2px;
+    padding: 0.75rem 2.1875rem;
+    font-size: 0.75rem;
+    line-height: 1.5;
+    margin-right: : 11px;
+    border-radius: 3px !important;
+    margin-bottom: : 0;
+    position: relative;
+    background-color: #8e3a45;
+    border-color: #8e3a45;
+    color: #ffffff;
+    transition: all .3s ease-in-out;
+    display: inline-block;
+}
+
+@media screen and (max-width: 679px){
+    
+    .cd-section .container .small-title {
+        font-size: 2.25em; 
+        line-height:1.35;
+    }
+    
+    .my-countdown.  .countdown-row {
+        width: 65px;
+    }
+    
+    .my-countdown .countdown-section {
+        display: inline-block;
+        position: relative;
+        padding :0;
+    }
+
+    .my-countdown .countdown-amount {
+        display: block;
+        font-size: 2.25em;
+        line-height: 70px;
+        font-weight: 900;
+    }
+
+    .my-countdown .countdown-period {
+         text-transform: uppercase;
+         margin-top: 0px;
+         display: block; 
+        font-size: 0.75em;
+        
+    }
+
+    .my-countdown .separator {
+        position: absolute;
+        display: block;
+        top: 10%;
+        right: -0.5em;
+        width: 1em;
+        font-weight: 900;
+        font-size: 2.75em;
+    }
+
+}
