@@ -43,7 +43,7 @@ section.cd-section-full {
 }
 
 .cd-section .overlay {
-    opacity: 0.6;
+    opacity: 0.8;
     background-color:  rgba(0,85,99,0.7);  /* rgb(130,0,10);*/
     position: absolute;
     top: 0;
