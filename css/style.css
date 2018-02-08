@@ -259,7 +259,7 @@ span.wrap {                         /* The cursor */
     transition: all .3s linear;
 
 }
-form:hover>#subsDiv{
+.container form.cd-form:hover>#subsDiv{
     width: 100%;
 }
 
