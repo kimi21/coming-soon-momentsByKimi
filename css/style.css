@@ -208,6 +208,7 @@ span.wrap {                         /* The cursor */
 .cd-subscribe .form-control:focus {
     outline: none;
 }
+
 .input-group-btn {
     display: table-cell;
     font-size: 0;
@@ -258,7 +259,7 @@ span.wrap {                         /* The cursor */
     transition: all .3s linear;
 
 }
-#subsDiv:hover {
+form:hover>#subsDiv{
     width: 100%;
 }
 
