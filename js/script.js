@@ -55,13 +55,12 @@ var TxtType = function(el, toRotate, period) {
         css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
         document.body.appendChild(css);
         
-         $('.my-countdown').countdown({
+        // CALL THE COUNTDOWN PLUGIN
+        $('.my-countdown').countdown({
             until: $.countdown.UTCDate(
                 -7, 2019, 8, 21, 0, 0, 0
             ),
              layout: $('.my-countdown').html()
-//             layout: '<span class="countdown-section"><span class="countdown-amount">{dn}       <span class="countdown-sep">{sep}</span></span><span class="countdown-period">{dl}</span></span>'+
-//                '<span class="countdown-section"><span class="countdown-amount">{hn} <span class="countdown-sep">{sep}</span></span><span class="countdown-period">{hl}</span></span>'
         });
     };
 
